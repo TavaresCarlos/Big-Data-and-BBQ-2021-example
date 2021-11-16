@@ -13,6 +13,8 @@ ox.config(use_cache=True, log_console=False)
 
 place = "Viçosa, Brazil"
 graph = ox.graph_from_place(place, network_type="drive")
+nx.draw(graph, node_color='green', node_size=10)
+plt.show()
 
 '''
 fig, ax = ox.plot_graph(graph)
